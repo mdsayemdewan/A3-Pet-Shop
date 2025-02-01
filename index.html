@@ -15,6 +15,8 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
+                        petcolor: '#FFF9F4',
+                        petcolor2:'#F9DF8A', 
                     }
                 }
             }
@@ -25,6 +27,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=ADLaM Display' rel='stylesheet'>
+    <style>
+        .font-sora {
+            font-family: "Sora", serif;
+        }
+
+        .font-adlam {
+            font-family: "ADLaM Display";
+        }
+    </style>
 
     <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/7281b73a7b.js" crossorigin="anonymous"></script>
@@ -32,12 +44,90 @@
 
 </head>
 
-<body>
+<body class="font-sora ">
     <header>
-        
+        <nav
+            class="bg-petcolor w-full">
+            <div class="mx-auto border-b-2  border-b-slate-500 px-4 py-2 flex justify-between lg:justify-around items-center lg:py-6 lg:px-35 lg:border-none">
+            <!-- left part -->
+                <div class="flex justify-center items-center gap-6 ">
+                    <img src="Images/logo-header.png" alt="">
+                    <h3 class="hidden lg:flex">Browse <span class="text-yellow-300">4</span>Pets</h3>
+                </div>
+                <!-- middle part -->
+                <div class="hidden lg:flex">
+                    <ul class="flex gap-8 text-xs">
+                        <li><a href="">Find a pet</a></li>
+                        <li><a href="">Breeds</a></li>
+                        <li><a href="">Contact us</a></li>
+                    </ul>
+                </div>
+                <!-- right side  -->
+                <div class=" gap-4 items-center hidden lg:flex">
+                    <div>
+                        <i class="fa-regular fa-bell"></i>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <button class="btn btn-outline border border-yellow-400">Login
+
+                    </button>
+                    <button class="btn btn-warning">
+                        Register
+                    </button>
+                </div>
+                <i class="fa-solid fa-bars text-2xl lg:hidden"></i>
+            </div>
+        </nav>
+
+        <!-- Banner part -->
+        <div class="w-10/12 mx-auto relative mt-16 max-h-[47rem]">
+            <div class=" relative w-full lg:w-2/4 ">
+                <h4 class="font-adlam text-4xl">Pamper Your Pet, <br> Because They Deserve <br> the Bes</h4>
+                <p class="text-xl text-gray-400 my-4">Discover a world of treats, toys, and essentials handpicked for
+                    your furry friends. Shop now and make tails wag with joy!</p>
+                <button class="btn btn-warning">Find a pet</button>
+            </div>
+            <div class="relative -z-10 -top-20 lg:right-2 lg:-top-80" >
+                <img class="w-full mx-auto" src="images/cat-big.png" alt="">
+            </div>
+           
+        </div>
     </header>
     <main>
-
+        <h1>Browse By Categories</h1>
+        <!-- card -->
+         <div class="grid grid-cols-2 gap-2 lg:grid-cols-6">
+            <div class="bg-petcolor2">
+                <img src="images/dog-cartoon.png" alt="">
+                <h3>Dog</h3>
+                <h4>3 times</h4>
+            </div>
+            <div>
+                <img src="images/fish-cartoon.png" alt="">
+                <h3>Fish</h3>
+                <h4>3 times</h4>
+            </div>
+            <div>
+                <img src="images/cat-cartoon.png" alt="">
+                <h3>Cat</h3>
+                <h4>3 times</h4>
+            </div>
+            <div>
+                <img src="images/bird-cartoon.png " alt="">
+                <h3>Bird</h3>
+                <h4>3 times</h4>
+            </div>
+            <div>
+                <img src="images/mouse-cartoon.png " alt="">
+                <h3>Small pet</h3>
+                <h4>3 times</h4>
+            </div>
+            <div>
+                <img src="images/rabbit-cartoon.png" alt="">
+                <h3>Rabbit</h3>
+                <h4>2 times</h4>
+            </div>
+         </div>
     </main>
     <footer>
 
