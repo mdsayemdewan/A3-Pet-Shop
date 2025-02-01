@@ -22,6 +22,22 @@
             }
         }
     </script>
+    <style>
+        @keyframes slideIn {
+            0% {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        .animate-slide-in {
+            animation: slideIn 10s ease-out forwards;
+        }
+    </style>
 
     <!-- Google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -38,7 +54,7 @@
         }
     </style>
 
-    <!-- fontawesome -->
+    <!-- font awesome -->
     <script src="https://kit.fontawesome.com/7281b73a7b.js" crossorigin="anonymous"></script>
 
 
@@ -83,13 +99,13 @@
         <!-- Banner part -->
         <div class="w-10/12 mx-auto relative mt-16 max-h-[752px]">
             <div class=" relative w-full lg:w-2/4 ">
-                <h4 class="font-adlam text-4xl">Pamper Your Pet, <br> Because They Deserve <br> the Bes</h4>
-                <p class="text-xl text-gray-400 my-4">Discover a world of treats, toys, and essentials handpicked for
+                <h4 class="font-adlam text-4xl animate-slide-in">Pamper Your Pet, <br> Because They Deserve <br> the Bes</h4>
+                <p class="text-xl text-gray-400 my-4 animate-slide-in">Discover a world of treats, toys, and essentials handpicked for
                     your furry friends. Shop now and make tails wag with joy!</p>
-                <button class="btn btn-warning">Find a pet</button>
+                <button class="btn btn-warning animate-slide-in ">Find a pet</button>
             </div>
             <div class="relative -z-10 -top-20 lg:right-2 lg:-top-80">
-                <img class="w-full mx-auto" src="Images/cat-big.png" alt="">
+                <img class="w-full mx-auto animate-slide-in" src="Images/cat-big.png" alt="">
             </div>
 
         </div>
@@ -132,6 +148,32 @@
                 </div>
             </div>
         </section>
+
+        <!-- pet information -->
+         <section class="w-10/12 mx-auto my-32" >
+            <h1 class="text-3xl font-bold mb-10">Pet Information</h1>
+            <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" checked="checked" />
+                <div class="collapse-title text-xl font-medium">Click to open the Dog information</div>
+                <div class="collapse-content">
+                  <p>Dog:They are Loyal, protective, social.Average Lifespan 10-15 years.Good as a Pet.
+                </div>
+              </div>
+              <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">Click to open the Cat information</div>
+                <div class="collapse-content">
+                  <p>Cat:Affectionate and playful.They enjoy climbing.They require minimal training but need affection</p>
+                </div>
+              </div>
+              <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">Click to open the Bird information</div>
+                <div class="collapse-content">
+                  <p>They can mimic sounds.Average Lifespan 5-50 years </p>
+                </div>
+              </div>
+         </section>
 
         <!-- trending product -->
         <section class="w-full mx-auto my-32 bg-petcolor lg:p-32">
