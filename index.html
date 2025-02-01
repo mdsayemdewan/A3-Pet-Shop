@@ -16,7 +16,7 @@
                     colors: {
                         clifford: '#da373d',
                         petcolor: '#FFF9F4',
-                        petcolor2:'#F9DF8A', 
+                        petcolor2: '#F9DF8A',
                     }
                 }
             }
@@ -46,10 +46,11 @@
 
 <body class="font-sora ">
     <header>
-        <nav
-            class="bg-petcolor w-full">
-            <div class="mx-auto border-b-2  border-b-slate-500 px-4 py-2 flex justify-between lg:justify-around items-center lg:py-6 lg:px-35 lg:border-none">
-            <!-- left part -->
+        <!-- Nav bart -->
+        <nav class="bg-petcolor w-full">
+            <div
+                class="mx-auto border-b-2  border-b-slate-500 px-4 py-2 flex justify-between lg:justify-around items-center lg:py-6 lg:px-35 lg:border-none">
+                <!-- left part -->
                 <div class="flex justify-center items-center gap-6 ">
                     <img src="Images/logo-header.png" alt="">
                     <h3 class="hidden lg:flex">Browse <span class="text-yellow-300">4</span>Pets</h3>
@@ -80,54 +81,157 @@
         </nav>
 
         <!-- Banner part -->
-        <div class="w-10/12 mx-auto relative mt-16 max-h-[47rem]">
+        <div class="w-10/12 mx-auto relative mt-16 max-h-[752px]">
             <div class=" relative w-full lg:w-2/4 ">
                 <h4 class="font-adlam text-4xl">Pamper Your Pet, <br> Because They Deserve <br> the Bes</h4>
                 <p class="text-xl text-gray-400 my-4">Discover a world of treats, toys, and essentials handpicked for
                     your furry friends. Shop now and make tails wag with joy!</p>
                 <button class="btn btn-warning">Find a pet</button>
             </div>
-            <div class="relative -z-10 -top-20 lg:right-2 lg:-top-80" >
-                <img class="w-full mx-auto" src="images/cat-big.png" alt="">
+            <div class="relative -z-10 -top-20 lg:right-2 lg:-top-80">
+                <img class="w-full mx-auto" src="./images/cat-big.png" alt="">
             </div>
-           
+
         </div>
     </header>
     <main>
-        <h1>Browse By Categories</h1>
-        <!-- card -->
-         <div class="grid grid-cols-2 gap-2 lg:grid-cols-6">
-            <div class="bg-petcolor2">
-                <img src="images/dog-cartoon.png" alt="">
-                <h3>Dog</h3>
-                <h4>3 times</h4>
+        <!-- Browse by category -->
+        <section class="w-10/12 mx-auto my-32">
+            <h1 class="text-3xl font-bold mb-10">Browse By Categories</h1>
+            <!-- card -->
+            <div class="grid grid-cols-2 gap-6  lg:grid-cols-6 ">
+                <div class="bg-petcolor2 border rounded-xl p-9 max-w-[200px] flex items-center flex-col gap-2">
+                    <img class="border border-white rounded-full p-4 bg-white" src="images/dog-cartoon.png" alt="">
+                    <h3 class="font-bold font-adlam ">Dog</h3>
+                    <h4>3 times</h4>
+                </div>
+                <div class="bg-petcolor2 border rounded-xl p-9 max-w-[200px] flex items-center flex-col gap-2">
+                    <img class="border border-white rounded-full p-4 bg-white" src="images/fish-cartoon.png" alt="">
+                    <h3 class="font-bold font-adlam ">Fish</h3>
+                    <h4>3 times</h4>
+                </div>
+                <div class="bg-petcolor2 border rounded-xl p-9 max-w-[200px] flex items-center flex-col gap-2">
+                    <img class="border border-white rounded-full p-4 bg-white" src="images/cat-cartoon.png" alt="">
+                    <h3 class="font-bold font-adlam ">Cat</h3>
+                    <h4>3 times</h4>
+                </div>
+                <div class="bg-petcolor2 border rounded-xl p-9 max-w-[200px] flex items-center flex-col gap-2">
+                    <img class="border border-white rounded-full p-4 bg-white" src="images/bird-cartoon.png " alt="">
+                    <h3 class="font-bold font-adlam ">Bird</h3>
+                    <h4>3 times</h4>
+                </div>
+                <div class="bg-petcolor2 border rounded-xl p-9 max-w-[200px] flex items-center flex-col gap-2">
+                    <img class="border border-white rounded-full p-4 bg-white" src="images/mouse-cartoon.png " alt="">
+                    <h3 class="font-bold font-adlam ">Small pet</h3>
+                    <h4>3 times</h4>
+                </div>
+                <div class="bg-petcolor2 border rounded-xl p-9 max-w-[200px] flex items-center flex-col gap-2">
+                    <img class="border border-white rounded-full p-4 bg-white" src="images/rabbit-cartoon.png" alt="">
+                    <h3 class="font-bold font-adlam ">Rabbit</h3>
+                    <h4>2 times</h4>
+                </div>
             </div>
-            <div>
-                <img src="images/fish-cartoon.png" alt="">
-                <h3>Fish</h3>
-                <h4>3 times</h4>
+        </section>
+
+        <!-- trending product -->
+        <section class="w-full mx-auto my-32 bg-petcolor lg:p-32">
+            <h1 class="text-3xl font-bold mb-10">Trending Pet Products</h1>
+            <div class="lg:flex gap-6">
+                <div class="max-w-[424px] relative h-full bg-petcolor2 pl-10 pt-12">
+                    <h1 class="font-bold text-2xl mb-3">T- Shirt For Dogs</h1>
+                    <p class="text-sm mb-2">Discover a world of treats,toys,and,essentials handpicked</p>
+                    <button class="btn btn-warning bg-white border-none px-6"> Shop Now</button>
+                    <img class="relative -top-32 -right-20 lg:-right-24" src="images/cute-pet-small.png" alt="">
+                </div>
+
+                <div class="grid grid-cols-2 lg:grid-cols-3  gap-8  ">
+
+                    <!-- mini card 1 -->
+                    <div class=" flex  gap-4 py-2 pr-40 pl-4 bg-white">
+                        <img class="p-6 mr-6" src="./images/dog-cartoon.png" alt="">
+                        <div>
+                            <p><i class="fa-solid fa-star text-yellow-500"></i>4.5</p>
+                            <h4 class="font-medium">Dog</h4>
+                            <p>$39.99</p>
+                        </div>
+                    </div>
+                    <!-- mini card 2 -->
+                    <div class=" flex  gap-4 py-2 pr-40 pl-4 bg-white">
+                        <img class="p-6 mr-6" src="./images/bird-cartoon.png" alt="">
+                        <div>
+                            <p><i class="fa-solid fa-star text-yellow-500"></i>4.5</p>
+                            <h4 class="font-medium">Dog</h4>
+                            <p>$39.99</p>
+                        </div>
+                    </div>
+                    <!-- mini card 3 -->
+                    <div class=" flex  gap-4 py-2 pr-40 pl-4 bg-white">
+                        <img class="p-6 mr-6" src="./images/fish-cartoon.png" alt="">
+                        <div>
+                            <p><i class="fa-solid fa-star text-yellow-500"></i>4.5</p>
+                            <h4 class="font-medium">Dog</h4>
+                            <p>$39.99</p>
+                        </div>
+                    </div>
+                    <!-- mini card 4 -->
+                    <div class=" flex  gap-4 py-2 pr-40 pl-4 bg-white">
+                        <img class="p-6 mr-6" src="./images/rabbit-cartoon.png" alt="">
+                        <div>
+                            <p><i class="fa-solid fa-star text-yellow-500"></i>4.5</p>
+                            <h4 class="font-medium">Dog</h4>
+                            <p>$39.99</p>
+                        </div>
+                    </div>
+                    <!-- mini card 5 -->
+                    <div class=" flex  gap-4 py-2 pr-40 pl-4 bg-white">
+                        <img class="p-6 mr-6" src="./images/mouse-cartoon.png" alt="">
+                        <div>
+                            <p><i class="fa-solid fa-star text-yellow-500"></i>4.5</p>
+                            <h4 class="font-medium">Dog</h4>
+                            <p>$39.99</p>
+                        </div>
+                    </div>
+                    <!-- mini card 6-->
+                    <div class=" flex  gap-4 py-2 pr-40 pl-4 bg-white">
+                        <img class="p-6 mr-6" src="./images/cat-cartoon.png" alt="">
+                        <div>
+                            <p><i class="fa-solid fa-star text-yellow-500"></i>4.5</p>
+                            <h4 class="font-medium">Dog</h4>
+                            <p>$39.99</p>
+                        </div>
+                    </div>
+                    <!-- mini card 7 -->
+                    <div class=" flex  gap-4 py-2 pr-40 pl-4 bg-white">
+                        <img class="p-6 mr-6" src="./images/bird-cartoon.png" alt="">
+                        <div>
+                            <p><i class="fa-solid fa-star text-yellow-500"></i>4.5</p>
+                            <h4 class="font-medium">Dog</h4>
+                            <p>$39.99</p>
+                        </div>
+                    </div>
+                    <!-- mini card 8 -->
+                    <div class=" flex  gap-4 py-2 pr-40 pl-4 bg-white">
+                        <img class="p-6 mr-6" src="./images/mouse-cartoon.png" alt="">
+                        <div>
+                            <p><i class="fa-solid fa-star text-yellow-500"></i>4.5</p>
+                            <h4 class="font-medium">Dog</h4>
+                            <p>$39.99</p>
+                        </div>
+                    </div>
+                    <!-- mini card 9 -->
+                    <div class=" flex  gap-4 py-2 pr-40 pl-4 bg-white">
+                        <img class="p-6 mr-6" src="./images/rabbit-cartoon.png" alt="">
+                        <div>
+                            <p><i class="fa-solid fa-star text-yellow-500"></i>4.5</p>
+                            <h4 class="font-medium">Dog</h4>
+                            <p>$39.99</p>
+                        </div>
+                    </div>
+
+
+                </div>
             </div>
-            <div>
-                <img src="images/cat-cartoon.png" alt="">
-                <h3>Cat</h3>
-                <h4>3 times</h4>
-            </div>
-            <div>
-                <img src="images/bird-cartoon.png " alt="">
-                <h3>Bird</h3>
-                <h4>3 times</h4>
-            </div>
-            <div>
-                <img src="images/mouse-cartoon.png " alt="">
-                <h3>Small pet</h3>
-                <h4>3 times</h4>
-            </div>
-            <div>
-                <img src="images/rabbit-cartoon.png" alt="">
-                <h3>Rabbit</h3>
-                <h4>2 times</h4>
-            </div>
-         </div>
+        </section>
     </main>
     <footer>
 
